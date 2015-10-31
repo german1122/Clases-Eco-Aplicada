@@ -1,2 +1,2 @@
 # Clases-Eco-Aplicada
-Clases de Luis Ruvalcaba - CIDE
+Clases de Luis Ruvalcaba - Economía Aplicada - CIDE
