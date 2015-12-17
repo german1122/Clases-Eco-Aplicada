@@ -1,0 +1,375 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Modelo Unitario\n",
+    "* Preferencias de consumo\n",
+    "* Dictador\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "(Pooling hypothesis (hipótesis de agregación))$$\\Longrightarrow x^* = x\\Bigg(p, \\sum_i y_i\\Bigg)$$\n",
+    "\n",
+    "Modelo de negociación: $y_{NL}$ exógeno del hogar\n",
+    "\n",
+    "$$\\Longrightarrow x^* = x(p, y_1, \\ldots, y_n, \\alpha_1, \\ldots, \\alpha_n)$$\n",
+    "\n",
+    "donde  $\\alpha_j$ es un factor exógenos que modifica el poder de negociación.\n",
+    "\n",
+    "$$x^* = \\alpha + X\\beta + \\theta_1y_1^m + \\theta_2 y_2^m + \\epsilon$$\n",
+    "\n",
+    "a) $$H_0: \\theta_1 = \\theta_2$$"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "b) $$x^* = \\theta + X\\beta + \\sum_i y_i\\beta_i +  \\theta \\alpha + \\epsilon$$\n",
+    "\n",
+    "$$H_0: \\theta = 0$$\n",
+    "\n",
+    "Lo interesante: \n",
+    "\n",
+    "a) $$\\theta_1 > \\theta_2 \\quad \\& \\quad \\theta_2 > \\theta_1$$\n",
+    "b) Rechazar $H_0$\n",
+    "\n",
+    "|Pregunta | $y_{NL}$| \n",
+    "|--------|---------|\n",
+    "|Leyes de Divorcio|    |\n",
+    "|Transferencia prospera|    |\n",
+    "| $w_i$ |     | |\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Chiapori:\n",
+    "    No se necesita imponer un modelo de negociación para llegar al mismo resultado. Basta asumir que el hogar se comporta pareto-eficiente y basta relajar el supuesto de que todos tienen las mismas preferencias. También falta reconocer que hay una regla de asignación (libre de estructura) que está sólo enlos factores exógenos de empoderamiento individual. "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Formalización del modelo de [Chiappori (1992)](http://www.jstor.org/stable/2138727?seq=1#page_scan_tab_contents)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Sea un hogar con dos individuos:\n",
+    "    $$U^m(x_0, x_1, x_2); U^f(x_0, x_1, x_2)$$\n",
+    "    \n",
+    "    Su objetivo es consumir:\n",
+    "    \n",
+    "$$\\{x_0, x_1, x_2\\} = \\{x_0, x_1^m, x_1^f, x_2^m, x_2^f\\}$$\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "    dados precios e ingreso no laboral:\n",
+    "    \n",
+    "$$\\{p, y_m\\} = \\{p_0, p_1, p_2, y_m, y_f \\}$$\n",
+    "\n",
+    "Propuesta:\n",
+    "\n",
+    "Si la asignación dentro del hogar es de los recursos $\\{x_0, x_1, x_2\\}$ pareto eficiente y existe una regla de asignación (\"sharing rule\") $0 \\leq \\mu (p, y_m, y_f, \\alpha) \\leq 1$ que depende de factores exógenos. "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Chiapori llega a la misma asignación que McElroy & Horney sin tener que imponer ninguna estructura. Entonces, el problema de optimización se escribe de la siguiente manera:\n",
+    "\n",
+    "## Modelos Colectivos del Hogar\n",
+    "\n",
+    "$$\\max W = \\mu U^m(x_0, x_1, x_2) + (1-\\mu)U^f(x_0, x_1, x_2)$$\n",
+    "\n",
+    "$$s.a: \\quad p_0x_0 + p_1x_1 + p_2^m x_2^m + p_2^f x_2^f = (p_2^m + p_2^f)T + y_m + y_f$$\n",
+    "\n",
+    "\n",
+    "$$\\Longrightarrow    \n",
+    "x_j^* = x(p_1, p_2^m, p_2^f, y_m + y_f, \\mu (p, y_m, y_f, \\alpha_1, \\ldots, \\alpha_n)) = x(p_1, p_2^m, p_2^f, y_m, y_f, \\alpha_1, \\ldots, \\alpha_n) \\forall j = 0, 1, 2   $$\n",
+    "El planteamiento no impona una estructura ex-ante de resolución. Sólo reconoce que hay factores exógenos que a través de la regla de asignación inclina la balanza hacia las preferencias de uno u otro individuo. \n",
+    "\n",
+    "Supuesto: El hogar unitario tiene\n",
+    "    * Preferencias comunes\n",
+    "    * Es dictatorial\n",
+    "Lo anterior es un caso particular del modelo de preferencias comunes.\n",
+    "\n",
+    "Caso dictatorial: $\\mu = 0 \\quad ó \\quad \\mu = 1$\n",
+    "\n",
+    "$$W = U^f = U: \\mu = 0$$\n",
+    "$$W = U^m = U: \\mu = 1$$\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Intuición del planteamiento de Sharing Rule:\n",
+    "    \n",
+    "    Podemos pensar la optimización en dos etapas:\n",
+    "    \n",
+    "Primera etapa: el $y_{NL}$ total del hogar se asigna a cada miembro según su poder relativo de negociación:\n",
+    "\n",
+    "\n",
+    "  $$y$$\n",
+    "  \n",
+    "|  |  | \n",
+    "|--------|---------|\n",
+    "|$y^*(y^m, y^f, \\alpha_1, \\ldots, \\alpha_n)$ | $y-y^*(y^m, y^f, \\alpha_1, \\ldots, \\alpha_n)$    |\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Segunda etapa: cada individuo maximiza su utilidad sujeta a lo que tocó en la etapa anterior. \n",
+    "\n",
+    "$$\\max \\quad U^i(x_0, x_1, x_2)$$\n",
+    "\n",
+    "$$s.a: \\quad p_1 x_1 + p_2 x_2 + p_0 x_0 = Tp_2^j + y^*$$\n",
+    "\n",
+    "$$\\max \\quad U^j(x_0, x_1, x_2)$$\n",
+    "\n",
+    "$$s.a: \\quad p_1 x_1 + p_2 x_2 + p_0 x_0 = Tp_2^j + y-y^*$$\n",
+    "\n",
+    "Así, \n",
+    "\n",
+    "$$x_i^* = x_1^{*j} + x_1^{*i}$$\n",
+    "\n",
+    "$$x_j^* = x_2^{*j} + x_2^{*i}$$"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "$$x_j^{i*} = x(p, y_m, y_f, \\alpha_1, \\ldots, \\alpha_n),  \\forall j = 0, 1, 2   $$"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "El cociente de cambio relativo de cualquier bien con respecto a $y_m$ y $y_f$ es constante para cualquiera de los bienes. \n",
+    "\n",
+    "$$\\frac{\\frac{\\partial y^*}{\\partial y^m}\\Bigg[\\frac{\\partial x_i^m}{\\partial y^*} - \\frac{\\partial x_i}{\\partial y_f}\\Bigg]}{\\frac{\\partial y^*}{\\partial y^f}\\Bigg[\\frac{\\partial x_i^m}{\\partial y^*} - \\frac{\\partial x_i}{\\partial y_f}\\Bigg]} = \\frac{\\frac{\\partial x_i^m}{\\partial y^*}·\\frac{\\partial y^*}{\\partial y_m}- \\frac{\\partial x_i^f}{\\partial y^*}·\\frac{\\partial y^*}{\\partial y_m}}{\\frac{\\partial x_i^m}{\\partial y^*}·\\frac{\\partial y^*}{\\partial y_f}- \\frac{\\partial x_i^f}{\\partial y^*}·\\frac{\\partial y^*}{\\partial y_f}} = \\frac{\\frac{\\partial x_i}{\\partial y_m}}{\\frac{\\partial x_i^m}{\\partial y_f}} = k, \\forall i \\quad bienes$$"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Si $x_1 = \\alpha X\\beta + \\theta_m^1 y_m + \\theta_f^1 y_f + \\epsilon$\n",
+    "$x_2 = \\alpha X\\beta + \\theta_m^2 y_m + \\theta_f^2 y_f + \\epsilon$\n",
+    "\n",
+    "es ¿pareto eficiente?\n",
+    "\n",
+    "$$H_0: \\frac{\\theta_m^1}{\\theta_f^1} = \\frac{\\theta_m^2}{\\theta_f^2}$$"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Intra-Household resource Allocation: An Inferential Approach (Thomas, 96)\n",
+    "\n",
+    "Analiza si hay diferencia entre padre y madre en decisiones de inversión dentro del hogar y salud.\n",
+    "\n",
+    " KH está compuesto de:\n",
+    "             \n",
+    "            Ingesta de nutrientes \n",
+    "\n",
+    "            tasa de fertilidad y sobrevivencia\n",
+    "            \n",
+    "            Indicadores antropométricos\n",
+    "            \n",
+    "Datos: Encuesta de hogares de Brasil"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "collapsed": true
+   },
+   "source": [
+    "Modelo: $$Max \\Big\\{ U^m\\mu+ U^f(1-\\mu)\\Big\\}$$\n",
+    "s.a: $$0\\leq \\mu (P, y_m, y_f, \\alpha_1, \\ldots ,\\alpha_m)\\leq 1$$\n",
+    "$$Px = (w_m + w_f)T + y_m + y_f$$\n",
+    "Función de producción de salud:\n",
+    "$Z = Z(x, \\mu_c, \\mu_i, \\mu_n, \\epsilon)$, \n",
+    "donde \n",
+    "\n",
+    "$\\mu_c \\equiv$ características comunitarias;\n",
+    "\n",
+    "$\\mu_i \\equiv$ caractecterísticas individuales (sexo, edad, etc.)\n",
+    "\n",
+    "$\\mu_n \\equiv$ características del hogar (edad del jefe del hogar, sexo, educación de los padres, etc.)\n",
+    "\n",
+    "$\\epsilon \\equiv$ caraceterísticas no observables.\n",
+    "\n",
+    "$x^* = x(P, w_m, w_f, y_m, y_f, \\alpha_1, \\ldots, \\alpha_m, \\mu_c, \\mu_m, \\mu_i, \\epsilon)$\n",
+    "\n",
+    "$Z^* = Z(P, w_m, w_f, y_m, y_f, \\alpha_1, \\ldots, \\alpha_m, \\mu_c, \\mu_m, \\mu_i, \\epsilon)$\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "collapsed": true
+   },
+   "source": [
+    "## Modelo Empírico\n",
+    "\n",
+    "$$\\theta^* = [x^*, Z^*]$$\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "collapsed": true
+   },
+   "source": [
+    "$\\theta_1 \\equiv$ calorías per cápita del hogar;\n",
+    "\n",
+    "$\\theta_2 \\equiv$ proteínas;\n",
+    "\n",
+    "$\\theta_3 \\equiv$ número de niños nacidos;\n",
+    "\n",
+    "$\\theta_4 \\equiv$ proporción de niños vivos;\n",
+    "\n",
+    "$\\theta_5 \\equiv$ talla normalizada por edad\n",
+    "\n",
+    "$\\theta_6 \\equiv$ peso normalizado por talla"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "collapsed": true
+   },
+   "source": [
+    "Estima $\\theta^* = \\alpha + M\\beta + \\beta_m y_m + \\beta_f y_f + error$\n",
+    "\n",
+    "$M$ es una bariable categórica que representa estado de residencia - $\\mu_c$\n",
+    "\n",
+    "edad del jefe de familia - $\\mu_n$\n",
+    "\n",
+    "edad de la madre - $\\mu_n$\n",
+    "\n",
+    "edad del niño y sexo - $\\mu_i$"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "collapsed": true
+   },
+   "source": [
+    "    El ingreso no laboral está compuesto por (A) pensiones, seguridad social, compensación laboral o (B) RENTAS: activos financieros y físicos, regalos y otros ingresos no laborales.\n",
+    "    \n",
+    "En A, el supuesto de exogeneidad es más vulnerable.\n",
+    "\n",
+    "$H_0: \\beta_m = \\beta_f$\n",
+    "\n",
+    "Problemas: \n",
+    "a) $y_m$ - endógena, sobre todo las pensiones. \n",
+    "\n",
+    "b) Se menciona abajo con detalle."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Resultados del modelo lineal del ingreso de la madre, del ingreso del padre y de ambos. Incluye el ingreso no laboral de forma cuadrática.Parecería la mujer tiene mayor poder de negociación. Sin embargo se rechaza la prueba de igualdad de coeficientes. Estadísticamente no podemos decir que son diferentes. Se rechazan tanto a nivel lineal como a nivel no lineal la igualdad de los ingresos de la madre y el padre en las regresiones de proteína y fertilidad. En la regresión de fertilidad, la madre quisiera tener menos hijos. La prueba de Wald dice que son diferentes, pero al 10%. En la antropometría vemos que el ingreso no laboral de la madre tanto en peso como en talla es mayor al del padre, pero no hay un rechazo estadísticamente hablando. De todo esto podemos concluir que el hogar no se compone unitariamente. Es decir, no tienen preferencias comunes. La madre vela más por la formación del capital humano. \n",
+    "\n",
+    "    a) Pudiéramos no estar estimando los efectos diferenciados del ingreso no laboral de la padre y de la madre, dado que la estimación es con sesgo, dado que el ingreso no laboral está correlacionado con decisiones pasadas, por lo que el ingreso no laboral puede ser endógeno. Sobre todo en la parte de pensiones. \n",
+    "\n",
+    "    b) El otro problema es que el ingreso no laboral fue estimado con error:\n",
+    "\n",
+    "$$y = y^* + \\eta_j$$\n",
+    "\n",
+    "\n",
+    "$$\\theta = \\alpha + \\mu \\beta + y^*_m \\beta_m + y^*_f \\beta_f + \\epsilon$$\n",
+    "$$\\beta_m = \\frac{Cov(\\theta, y_m)}{Var(y_m)} S_m$$\n",
+    "\n",
+    "$$\\beta_f = \\frac{Cov(\\theta, y_f)}{Var(y_f)} S_f$$\n",
+    "\n",
+    "$y \\equiv$ ingreso no laboral observado.\n",
+    "\n",
+    "\n",
+    "$y^* \\equiv$ ingreso no laboral verdadero. \n",
+    "\n",
+    "Por tanto, estamos sobre o subestimando el efecto. \n",
+    "\n",
+    "$$H_0: \\beta_m = \\beta_f $$\n",
+    "\n",
+    "Pero lo estamos haciendo mediante la estimación con sesgo. Es decir, \n",
+    "\n",
+    "$$H_0: \\beta_m S_m = \\beta_f S_f$$\n",
+    "\n",
+    "Se puede rechazar debido a que $S_m \\neq S_f$"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Propuesta ante sesgo debido a un error de medición que contamina la interpretación de la hipótesis de agregación del ingreso. Solución: Asumir que el efecto del sesgo del padre en la estimación de $y_m$ es igual para cualquier varible dependiente. También lo mismo sobre el efecto del sesgo de l madre de $y_f$ en cualquier variable dependiente. \n",
+    "\n",
+    "$$\\theta_1 = \\alpha_1 + \\mu \\beta_1 + y_m \\beta_m^1 + y_f \\beta_f^1 + \\epsilon_1$$\n",
+    "\n",
+    "$$\\theta_1 = \\alpha_2 + \\mu \\beta_2 + y_m \\beta_m^2 + y_f \\beta_f^2 + \\epsilon_2$$\n",
+    "\n",
+    "Variación de la prueba para la hipótesis de agregación del ingreso para la \"pooling hypothesis\"\n",
+    "$$H_0: \\frac{\\beta^1_m S_m^1}{\\beta^2_m S_m^1} = \\frac{\\beta^1_f S_f^1}{\\beta^2_f S_f^1}$$\n",
+    "\n",
+    "Este es un \"Second Best\". Si rechazamos la hipótesis, entonces podemos decir que dentro del hogar ponderan distinto. Un peso más de ingreso lo gastarías de manera distinta. Pero si no la rechazamos, no podemos decir que el hogar es homogéneo. "
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 2",
+   "language": "python",
+   "name": "python2"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.10"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}
